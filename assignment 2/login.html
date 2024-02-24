@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login">
+      <header class="iosstatus-barblack5">
+        <img class="bg-icon5" alt="" src="./public/bg@2x.png" />
+
+        <img
+          class="left-side-icon5"
+          loading="eager"
+          alt=""
+          src="./public/left-side.svg"
+        />
+
+        <div class="right-side5">
+          <img
+            class="mobile-signal-icon5"
+            loading="eager"
+            alt=""
+            src="./public/mobile-signal.svg"
+          />
+
+          <img
+            class="wifi-icon5"
+            loading="eager"
+            alt=""
+            src="./public/wifi.svg"
+          />
+
+          <img
+            class="battery-icon3"
+            loading="eager"
+            alt=""
+            src="./public/battery.svg"
+          />
+        </div>
+      </header>
+      <section class="wifi-frame">
+        <div class="battery-frame1">
+          <div class="ellipse-parent3">
+            <div class="frame-child8"></div>
+            <div class="humaaansstanding-wrapper">
+              <div class="humaaansstanding">
+                <div class="ellipse-parent4">
+                  <div class="frame-child9"></div>
+                  <div class="frame-child10"></div>
+                  <div class="frame-child11"></div>
+                  <img
+                    class="humaaansstanding-5-icon"
+                    loading="eager"
+                    alt=""
+                    src="./public/humaaansstanding5.svg"
+                  />
+                </div>
+                <div class="humaaansstanding-child"></div>
+                <div class="text-frame-wrapper">
+                  <div class="text-frame"></div>
+                </div>
+              </div>
+            </div>
+            <div class="welcome-frame1">
+              <h1 class="welcome-back">Welcome Back</h1>
+              <div class="lorem-ipsum-dolor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                maecenas mi non sed ut odio. Non, justo, sed facilisi et.
+              </div>
+            </div>
+          </div>
+          <div class="sign-in-frame">
+            <div class="username-pass-frame">
+              <div class="vector-frame-user-name">
+                <div class="vector-frame-password">
+                  <img
+                    class="vector-user-name"
+                    alt=""
+                    src="./public/vector-13.svg"
+                  />
+
+                  <div class="login-text">
+                    <div class="login-text-child"></div>
+                    <img
+                      class="username-email-icon"
+                      alt=""
+                      src="./public/vector-14.svg"
+                    />
+
+                    <input
+                      class="username-email"
+                      placeholder="Username , Email "
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div class="vector-frame-password1">
+                  <div class="vector-frame-password-child"></div>
+                  <div class="vector-password-parent">
+                    <img
+                      class="vector-password-icon"
+                      alt=""
+                      src="./public/vector-24.svg"
+                    />
+
+                    <input
+                      class="password-field"
+                      placeholder="Password"
+                      type="text"
+                    />
+                  </div>
+                  <img class="group-icon" alt="" src="./public/group.svg" />
+                </div>
+              </div>
+              <div class="sign-up-forgot-pass">
+                <div class="sign-up1" id="signUpText">Sign Up</div>
+                <div class="forgot-password">Forgot Password ?</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="frame-background">
+        <button class="rectangle-parent3" id="groupButton">
+          <div class="frame-child12"></div>
+          <div class="login1">Login</div>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      var signUpText = document.getElementById("signUpText");
+      if (signUpText) {
+        signUpText.addEventListener("click", function (e) {
+          window.location.href = "./sign-up.html";
+        });
+      }
+      
+      var groupButton = document.getElementById("groupButton");
+      if (groupButton) {
+        groupButton.addEventListener("click", function (e) {
+          window.location.href = "./home.html";
+        });
+      }
+      </script>
+  </body>
+</html>

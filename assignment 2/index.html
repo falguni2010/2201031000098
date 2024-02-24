@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="start-screen">
+      <section class="parent-frame">
+        <div class="f-r-a-m-e">
+          <div class="frame-group">
+            <header class="iosstatus-barblack">
+              <img class="bg-icon" alt="" src="./public/bg@2x.png" />
+
+              <img
+                class="left-side-icon"
+                loading="eager"
+                alt=""
+                src="./public/left-side.svg"
+              />
+
+              <div class="right-side">
+                <img
+                  class="mobile-signal-icon"
+                  loading="eager"
+                  alt=""
+                  src="./public/mobile-signal.svg"
+                />
+
+                <img
+                  class="wifi-icon"
+                  loading="eager"
+                  alt=""
+                  src="./public/wifi.svg"
+                />
+
+                <img
+                  class="battery-icon"
+                  loading="eager"
+                  alt=""
+                  src="./public/battery.svg"
+                />
+              </div>
+            </header>
+          </div>
+          <div class="ellipse-shape"></div>
+          <div class="child-frame">
+            <div class="inner-frame">
+              <div class="ellipse-group"></div>
+              <div class="shape-set"></div>
+              <div class="ellipse-collection"></div>
+              <div class="empty-ellipse"></div>
+              <div class="i-stockphoto-r-e-c-t-a-n-g-l-e"></div>
+              <img
+                class="istockphoto-1009279168-170667a-icon"
+                loading="eager"
+                alt=""
+                src="./public/istockphoto1009279168170667a-1@2x.png"
+              />
+            </div>
+            <div class="signin-text">
+              <div class="register-text">
+                <div class="sign-in-box"></div>
+                <div class="register-box">
+                  <h3 class="foodienator">Foodienator</h3>
+                  <div class="order-your-favorite-container">
+                    <p class="order-your-favorite">Order your favorite Meals</p>
+                    <p class="here">Here!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="welcome-frame">
+        <div class="welcome-frame-child"></div>
+        <button class="signin-text1">
+          <div class="signin-text-child"></div>
+          <b class="sign-in" id="signInText">Sign in</b>
+        </button>
+        <div class="header-frame">
+          <div class="register" id="registerText">Register</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var signInText = document.getElementById("signInText");
+      if (signInText) {
+        signInText.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+      
+      var registerText = document.getElementById("registerText");
+      if (registerText) {
+        registerText.addEventListener("click", function (e) {
+          window.location.href = "./sign-up.html";
+        });
+      }
+      </script>
+  </body>
+</html>
